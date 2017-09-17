@@ -6,6 +6,10 @@ class TicketsController < ApplicationController
     @ticket = @project.tickets.build
   end
 
+  def show
+    @ticket
+  end
+
   def create
     @ticket = @project.tickets.build(ticket_params)
     if @ticket.save
@@ -27,6 +31,6 @@ class TicketsController < ApplicationController
     end
 
     def set_ticket
-      @ticket = @project.tockets.find(params[:id])
+      @ticket = @project.tickets.find(params[:id])
     end
 end
