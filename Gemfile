@@ -12,6 +12,7 @@ group :doc do
 end
 gem 'test-unit'
 gem 'rake', '< 11.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 group :test, :development do
   gem 'rspec-rails', "~> 2.14"
 end
