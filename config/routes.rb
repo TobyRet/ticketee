@@ -3,5 +3,6 @@ Ticketee::Application.routes.draw do
   resources :projects do
     resources :tickets
   end
+  resources :users
 end
 
